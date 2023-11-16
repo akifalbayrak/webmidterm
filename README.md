@@ -9,4 +9,5 @@ This repository contains the code for the website of Hamsi Bank Limited Company.
 Description
 The website serves as the online platform for Hamsi Bank, providing information about the company, its services, and offerings to its customers and potential investors.
 
-![Uploading image.png…]()
+![image](https://github.com/akifalbayrak/webmidterm/assets/142679378/4515e108-1127-4638-a3bb-1dd383f986c8)
+
