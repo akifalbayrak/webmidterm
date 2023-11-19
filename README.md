@@ -1,8 +1,6 @@
 # webmidterm
 CENG-3507 MIDTERM PROJECT
 
-Sure, creating a README for GitHub helps users understand your project better. Here's a template for your HTML project:
-
 Hamsi Bank Limited Company
 This repository contains the code for the website of Hamsi Bank Limited Company.
 
