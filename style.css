@@ -1,39 +1,46 @@
+/* Styling for links */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* Global styling for the entire container */
 .container {
     font-family: "Roboto", Arial;
     font-size:20px;
 }
 
+/* Header styling */
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
-    border: 0px 0px 0px 10px;
+    border: 0px 0px 0px 10px; /* Border on the left side only */
     background-color: #b7dbffca;
 }
 
+/* Styling for the left section of the header */
 .left-header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+/* Styling for links within the left header */
 .left-header a {
     margin-left: 20px;
     font-weight: bold;
     font-style: italic;
 }
 
+/* Styling for the header image */
 .header-img {
     height: 40px;
 }
 
+/* Styling for the right section of the header */
 .right-header {
     display: flex;
     align-items: center;
@@ -46,11 +53,13 @@ a {
     margin: auto;
 }
 
+/* Main content styling */
 .main {
     display: flex;
     justify-content: space-around;
 }
 
+/* Styling for the left main section */
 .left-main {
     display: flex;
     flex-direction: column;
@@ -59,17 +68,20 @@ a {
     width: 20%;
 }
 
+/* Styling for text elements within the left main section */
 .symbol-text {
     padding: 5px;
     white-space: nowrap;
 }
 
+/* Styling for every elements within the left main section */
 .left-main > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* Styling for symbol images within the left main section */
 .symbol-img {
     width: 80%;
     display: flex;
@@ -81,6 +93,7 @@ a {
     text-align: center;
 }
 
+/* Styling for the center main section */
 .center-main {
     width: 50%;
     padding: 10px;
@@ -89,6 +102,7 @@ a {
     flex-direction: column;
 }
 
+/* Styling for the upper part of the center main section */
 .upper-center-main {
     margin: auto;
     text-align: center;
@@ -97,6 +111,7 @@ a {
     align-items: center;
 }
 
+/* Styling for the body part of the center main section */
 .body-center-main {
     display: flex;
     flex-direction: column;
@@ -104,6 +119,7 @@ a {
     margin: auto;
 }
 
+/* Styling for elements within the body of the center main section */
 .body-center-main div {
     width: 100%;
     display: flex;
@@ -112,6 +128,7 @@ a {
     justify-content: space-between;
 }
 
+/* Styling for the right main section */
 .right-main {
     display: flex;
     flex-direction: column;
@@ -120,6 +137,7 @@ a {
     width: 30%;
 }
 
+/* Styling for the various sections within the right main section */
 .right-info {
     padding: 5px;
     width: 80%;
@@ -138,12 +156,14 @@ a {
     border-radius: 10px;
     background-color: #f3f7fb;
 }
+/* Styling for personal information within the right main section */
 .right-info-personal {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+/* Styling for recent tasks within the right main section */
 .right-recent-task {
     display: flex;
     flex-direction: column;
@@ -157,6 +177,7 @@ a {
     background-color: #f3f7fb;
 }
 
+/* Styling for different types of recent task paragraphs */
 .right-recent-task div p.plus {
     color: green;
 }
@@ -169,6 +190,7 @@ a {
     font-weight: bold;
 }
 
+/* Footer styling */
 .footer {
     background-color: #b7dbffca;
     border-radius: 0px 0px 10px 10px;
@@ -180,11 +202,13 @@ a {
     text-align: center;
 }
 
+/* Styling for links in the footer */
 .links {
     display: flex;
     justify-content: space-around;
 }
 
+/* Styling for elements within the links section */
 .links > * {
     display: flex;
     flex-direction: column;
@@ -194,17 +218,22 @@ a {
     margin: 10px 0px;
 }
 
+/* Styling for disabled elements */
 .disabled {
     pointer-events: none;
     cursor: default;
     opacity: 0.6;
 }
+
+/* Styling for a form */
 .form {
     border-radius: 10px;
     background-color: rgba(213, 213, 213, 0.5);
     display: flex;
     flex-direction: column;
 }
+
+/* Styling for elements within a form */
 .form > * {
     margin: 10px;
     padding: 10px;
@@ -219,6 +248,7 @@ a {
     font-style: italic;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 800) {
     .symbol-img{
         display: flex;
