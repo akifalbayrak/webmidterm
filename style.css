@@ -8,7 +8,6 @@ a {
 .container {
     font-family: "Roboto", Arial;
     font-size:20px;
-    height: 100vh;
 }
 
 /* Header styling */
@@ -57,17 +56,30 @@ a {
 
 /* Main content styling */
 .main {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    overflow: visible;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* grid-template-columns: 1fr auto 1fr; */
 }
 
 /* Styling for the left main section */
 .left-main {
+    position: sticky;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    /* width: 20%; */
+    top: 50px;
+    width: 20%;
+}
+
+
+.symbol-img{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styling for text elements within the left main section */
@@ -93,6 +105,8 @@ a {
     border-radius: 10px;
     background-color: #f3f7fb;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Styling for the center main section */
@@ -102,9 +116,7 @@ a {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
     margin: auto;
-    height: 80vh;
 }
 
 /* Styling for the upper part of the center main section */
@@ -128,9 +140,11 @@ a {
 
 /* Styling for the right main section */
 .right-main {
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 50px;
     /* width: 30%; */
 }
 
@@ -254,7 +268,15 @@ a {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    .left-main{
+        position: static;
+        width: 100%;
+    }
+    .right-main{
+        position: static;
+    }
     .main{
+        display: grid;
         grid-template-columns: 1fr;
         /* font-size: 0.6rem; */
         /* color: green; */
