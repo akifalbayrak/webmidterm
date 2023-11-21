@@ -18,8 +18,9 @@ a {
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
     border: 0px 0px 0px 10px; /* Border on the left side only */
-    background-color: #b7dbffca;
-    /* height: 5vh; */
+    background-color: #b7dbff;
+    position: sticky;
+    top: 10px;
 }
 
 /* Styling for the left section of the header */
@@ -60,7 +61,6 @@ a {
     display: flex;
     align-items: start;
     justify-content: center;
-    /* grid-template-columns: 1fr auto 1fr; */
 }
 
 /* Styling for the left main section */
@@ -69,18 +69,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 50px;
+    top: 70px;
     width: 20%;
 }
 
 
-.symbol-img{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 /* Styling for text elements within the left main section */
 .symbol-text {
@@ -100,7 +95,6 @@ a {
     width: 80%;
     display: flex;
     flex-direction: row;
-
     align-items: center;
     border-radius: 10px;
     background-color: #f3f7fb;
@@ -109,9 +103,14 @@ a {
     margin-bottom: 10px;
 }
 
+.symbol-img:hover{
+    border: 3px solid black;
+    background-color: rgba(155, 155, 155, 0.49);
+}
+
 /* Styling for the center main section */
 .center-main {
-    /* width: 50%; */
+    width: 70%;
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -144,8 +143,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 50px;
-    /* width: 30%; */
+    top: 70px;
+    font-size: .8rem;
 }
 
 /* Styling for the various sections within the right main section */
@@ -160,6 +159,11 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.right-main > *:hover{
+    border: 3px solid black;
+    background-color: rgba(155, 155, 155, 0.49);
+}
 .right-wallet {
     padding: 5px;
     width: 80%;
@@ -170,6 +174,7 @@ a {
     background-color: #f3f7fb;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: .9rem;
 }
 /* Styling for personal information within the right main section */
 .right-info-personal {
@@ -178,11 +183,16 @@ a {
     text-align: center;
 }
 
+.right-info-personal h3 {
+    margin: 5px 0;
+}
+.right-info-personal p {
+    margin: 0;
+}
 /* Styling for recent tasks within the right main section */
 .right-recent-task {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: center;
     font-weight: lighter;
     padding: 5px;
@@ -192,6 +202,16 @@ a {
     background-color: #f3f7fb;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.right-recent-task div {
+    background-color: #fff;
+    border: 1px solid grey;
+    width: 80%;
+    border-radius: 10px;
+    font-size: .7rem;
+    margin: 10px 0;
+    padding: 5px;
 }
 
 /* Styling for different types of recent task paragraphs */
@@ -213,7 +233,6 @@ a {
     border-radius: 0px 0px 10px 10px;
     margin-top: 20px;
     font-size: 0.8rem;
-    /* height: 15vh; */
 }
 
 .footer-copyright {
@@ -278,7 +297,5 @@ a {
     .main{
         display: grid;
         grid-template-columns: 1fr;
-        /* font-size: 0.6rem; */
-        /* color: green; */
     }
 }
